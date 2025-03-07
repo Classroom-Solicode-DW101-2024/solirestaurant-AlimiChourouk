@@ -1,0 +1,605 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    display: flex;
+    background: linear-gradient(to right ,#d92332,#92b513) ;  
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 1255px;
+    z-index: 1;
+}
+#imgTitre{
+    display: flex;
+    align-items: center;
+}
+#img{
+    width: 120px;
+    height: 120px;
+}
+.panier{
+    margin-top: 2%;
+}
+#total{
+    margin-top: -29%;
+}
+header h1{
+    color: #ffffff;
+     /* margin-top: 40px; */
+}
+.imgPanier{
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 1px 1PX #000000;
+    border-radius: 10%;
+}
+.imgPanier:hover{
+    background-color: #fdf7da;
+}
+
+@media (max-width: 368px) {
+    header{
+        display: flex;
+        background-color: #d92332;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+#section1{
+    display: flex;
+    background: linear-gradient(to right ,#d92332,#92b513);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 70px;
+    padding-top: 14%;
+
+}
+@keyframes burgerAnimation {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(3deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+#section1 img {
+    width: 20%;
+    height: 20%;
+    border-radius: 20%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(0, 0, 0, 0.2);
+    animation: burgerAnimation 3s infinite ease-in-out;
+}
+
+#section1 p{
+   font-size: 20px;
+   color: #ffffff;
+ }
+
+
+.cuisine-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.cuisine {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f6f0f0;
+    margin: 4%;
+    padding: 20px;
+}
+
+.plats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.plat {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plat:hover {
+    transform: scale(1.05);
+}
+
+.plat img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #d92332;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c54e29;
+}
+/* page panier */
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style du header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #d92332, #92b513);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+#imgTitre {
+    display: flex;
+    align-items: center;
+}
+
+#img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+header h1, header h3 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Contenu principal */
+section {
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #92b513;
+}
+
+.panier {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plat-panier {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.plat-panier img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.plat-panier p {
+    flex: 1;
+    margin: 0 10px;
+}
+
+
+.plat-panier button {
+    gap: 200px;
+}
+form {
+    display: inline-block;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+button {
+    background-color: #8acf9d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+button:hover {
+    background-color: #c54e29;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .plat-panier {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* page panier */
+/* page commade de l'admin */
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #d92332;
+    color: white;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: #92b513;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #7d9c10;
+}
+
+/* Messages de succès et d'erreur */
+p {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+p[style*="color: green"] {
+    background: #d4edda;
+    color: #155724;
+}
+
+p[style*="color: red"] {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+/* page de la confirmation */
+#Confirmée {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 80px auto;
+}
+
+#Confirmée h1 {
+    color: #d92332;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#Confirmée p {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#Confirmée a {
+    text-decoration: none;
+    background-color: #92b513;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#Confirmée a:hover {
+    background-color: #7d9c10;
+}
+/* page de la confirmation */
+/* page de login */
+
+#login {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#login input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+#login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login button:hover {
+    background-color: #45a049;
+}
+
+#login input:invalid {
+    border: 1px solid red;
+}
+
+#login input:valid {
+    border: 1px solid green;
+}
+/* page de login */
+/* page de inscéption */
+
+#inscreption {
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les labels */
+#inscreption label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style pour les champs de saisie */
+/* Style général du formulaire d'inscription */
+#inscreption {
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#forninscrition{
+    margin-top: 9%;
+}
+/* Style pour les labels */
+#inscreption label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style pour les champs de saisie */
+#inscreption input[type="text"],
+#inscreption input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style pour le bouton d'inscription */
+#inscreption button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Changement de couleur au survol du bouton */
+#inscreption button:hover {
+    background-color: #45a049;
+}
+
+/* Style pour le lien de connexion */
+#buttonlogin {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4CAF50;
+    text-decoration: none;
+    background-color: #c54e29;    padding: 5%;
+    border-radius: 4px;
+    list-style: none;
+   
+}
+
+#buttonlogin:hover {
+    background-color: #dda999;
+}
+
+/* Style pour l'affichage des erreurs de validation */
+#inscreption input:invalid {
+    border: 1px solid red;
+}
+
+#inscreption input:valid {
+    border: 1px solid green;
+}
+
+/* page de inscéption */
+/* la partier footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+    /* display: flex; */
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #f8b400;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section a img {
+    width: 30px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-credit {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* la partier footer */
+/* page admin */
+
